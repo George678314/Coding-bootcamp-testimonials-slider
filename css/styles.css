@@ -1,0 +1,172 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* sections */
+.whole-slide {
+  position: relative;
+}
+
+.quote-section {
+  display: inline-block;
+  padding-left: 13%;
+  padding-bottom: 55px;
+  position: relative;
+  width: 47%;
+  z-index: 50;
+}
+
+.photo-section {
+  display: inline;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
+.bottom-curve-section {
+  position: static;
+}
+
+/* quote-section */
+.quote-graphic {
+  position: relative;
+  left: 122px;
+  top: 158px;
+}
+
+.quote {
+  color: hsl(240, 38%, 20%);
+  font-size: 32px;
+  font-weight: lighter;
+  padding-top: 90px;
+}
+
+.name {
+  color: hsl(240, 38%, 20%);
+}
+
+.role {
+  color: hsl(240, 18%, 77%);
+}
+
+/* photo-section */
+.photo {
+  border-radius: 4px;
+  box-shadow: 0px 3px 9px -2px hsl(240, 18%, 77%);
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  width: 400px;
+}
+
+.main-graphic {
+  position: static;
+}
+
+.selector-box {
+  background-color: white;
+  border: none;
+  border-radius: 90px;
+  box-shadow: -2px 3px 10px 3px hsl(240, 18%, 77%);
+  display: inline-block;
+  line-height: 49px;
+  position: absolute;
+  left: 180px;
+  top: 430px;
+  text-align: center;
+  height: 40px;
+  width: 75px;
+}
+
+.selector-icons {
+  font-size: 0.2rem;
+  letter-spacing: 1.6rem;
+}
+
+/* bottom-curve-section */
+.bottom-curve-graphic {
+  position: static;
+  bottom: 0;
+  left: 0;
+}
+
+/* mobile attributes */
+
+@media (max-width: 375px) {
+
+  body {
+    text-align: center;
+  }
+
+  /* photo-section */
+  .photo-section {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    right: auto;
+    text-align: center;
+  }
+
+  .photo {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .selector-box {
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    line-height: 57px;
+    left: 0;
+    right: 0;
+    top: 425px;
+    height: 50px;
+    width: 130px;
+  }
+
+  .selector-icons {
+    font-size: 0.5rem;
+    letter-spacing: 3rem;
+  }
+
+  /* quote-section */
+  .quote-section {
+    padding: 0;
+    width: 74%;
+  }
+
+  .quote-graphic {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .quote {
+    font-size: 24px;
+    padding: 48px 0 0;
+  }
+
+  .name {
+    display: block;
+    font-size: 1.1rem;
+    padding: 3px 0;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .bottom-curve-section {
+    text-align: left;
+  }
+
+  .bottom-curve-graphic {
+    text-align: left;
+  }
+
+}
